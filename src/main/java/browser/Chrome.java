@@ -47,7 +47,7 @@ public class Chrome implements IBrowser
 
     public void fileAutoDownload(boolean autoDownload)
     {
-        String downloadFilepath = "/Users/mitsram/Projects/downloads/";
+        String downloadFilepath = "<full path here>";
 
         if (autoDownload) {
             chromePrefs.put("profile.default_content_settings.popups", 0);
