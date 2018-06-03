@@ -2,12 +2,17 @@
 
 Base framework for web and mobile (ios, android) automation testing using Selenium WebDriver and Appium.
 
-### Android Setup
+### Appium Setup
+```
+npm install -g appium@<version number>
+```
+
+##### Android Setup
 ```
 
 ```
 
-### iOS Setup
+##### iOS Setup
 ```
 
 ```
