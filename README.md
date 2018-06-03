@@ -1,4 +1,4 @@
-# base-test-framework
+# Automation Framework (base)
 
 Base framework for web and mobile (ios, android) automation testing using Selenium WebDriver and Appium.
 
