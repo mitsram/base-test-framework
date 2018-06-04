@@ -2,11 +2,14 @@
 
 Base framework for web and mobile (ios, android) automation testing using Selenium WebDriver and Appium.
 
-## Prerequites
+## Setup
 
-### For Device Automation
+### MacOS
 
-#### MacOS
+#### Prerequisites
+
+- Install Java JDK
+  - Ensure that the JAVA_HOME environment variable is also set to the JDK path
 - Install Homebrew
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,4 +22,5 @@ brew install node
 ```
 npm install -g appium
 ```
+
 
