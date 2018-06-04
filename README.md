@@ -13,6 +13,10 @@ Base framework for web and mobile (ios, android) automation testing using Seleni
     ```
     export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home"
     ```
+    or
+    ```
+    export JAVA_HOME=$(/usr/libexec/java_home)
+    ```
 - Install Android SDK via Android Studio
   - Set ANDROID_HOME
     Example:
