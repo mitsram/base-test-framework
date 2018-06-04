@@ -3,20 +3,20 @@
 Base framework for web and mobile (ios, android) automation testing using Selenium WebDriver and Appium.
 
 ## Prerequites
-- [X] Install Brew
-- [X] Install NodeJS
 
-### Appium Setup
+### For Device Automation
+
+#### MacOS
+- Install Homebrew
 ```
-npm install -g appium@<version number>
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+- Install Node.js and NPM
+```
+brew install node
+```
+- Install Appium
+```
+npm install -g appium
 ```
 
-##### Android Setup
-```
-
-```
-
-##### iOS Setup
-```
-
-```
