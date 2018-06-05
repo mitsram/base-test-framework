@@ -42,5 +42,9 @@ Base framework for web and mobile (ios, android) automation testing using Seleni
 
 #### Android Driver Setup
 
+Get the current package and activity name opened in the device
+```
+adb shell dumpsys window windows | grep -E ‘mCurrentFocus’
+```
 
 
