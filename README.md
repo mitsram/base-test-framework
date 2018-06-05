@@ -62,7 +62,7 @@ DesiredCapabilities capabilities = new DesiredCapabilities();
 #### iOS Setup
 
 WebDriverAgent
-- Go to: node_modules/appium-xcuitest-driver/WebDriverAgent
+- Go to: /usr/local/lib/node_modules/appium-xcuitest-driver/WebDriverAgent
 - mkdir -p Resources/WebDriverAgent.bundle
 - sh ./Scripts/bootstrap.sh -d
 - Open WebDriverAgent.xcodeproj
