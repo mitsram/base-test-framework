@@ -59,3 +59,13 @@ DesiredCapabilities capabilities = new DesiredCapabilities();
         return new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 ```
 
+#### iOS Setup
+
+WebDriverAgent
+- Go to: node_modules/appium-xcuitest-driver/WebDriverAgent
+- mkdir -p Resources/WebDriverAgent.bundle
+- sh ./Scripts/bootstrap.sh -d
+- Open WebDriverAgent.xcodeproj
+- Build WebDriverAgent with signed
+- chmod -R 777 . appium-xcuitest-driver/*
+
