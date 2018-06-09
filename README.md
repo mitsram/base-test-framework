@@ -61,7 +61,7 @@ adb shell dumpsys window windows | grep -E ‘mCurrentFocus’
 
 ```
 WebDriverAgent Configuration
-1. Go to: /usr/local/lib/node_modules/appium-xcuitest-driver/WebDriverAgent
+1. Go to: /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/
 2. mkdir -p Resources/WebDriverAgent.bundle
 3. sh ./Scripts/bootstrap.sh -d
 4. Open WebDriverAgent.xcodeproj
