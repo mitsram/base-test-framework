@@ -47,25 +47,24 @@ Get the current package and activity name opened in the device
 adb shell dumpsys window windows | grep -E ‘mCurrentFocus’
 ```
 
-Desired Capabilities
-```
-DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"<Package Name>");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "<Activity Name>");
-        return new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-```
 
 #### iOS Setup
+```
+- brew install ideviceinstaller
+- brew install carthage
+- npm install -g ios-deploy
+- npm install -g deviceconsole
+- gem install xcpretty
+- brew install libimobiledevice
+- *brew install libimobiledevice --HEAD - iOS 10
+- *brew install libimobiledevice - iOS 9
 
-WebDriverAgent
-- Go to: /usr/local/lib/node_modules/appium-xcuitest-driver/WebDriverAgent
-- mkdir -p Resources/WebDriverAgent.bundle
-- sh ./Scripts/bootstrap.sh -d
-- Open WebDriverAgent.xcodeproj
-- Build WebDriverAgent with signed
-- chmod -R 777 . appium-xcuitest-driver/*
+```
+WebDriverAgent Configuration
+1. Go to: /usr/local/lib/node_modules/appium-xcuitest-driver/WebDriverAgent
+2. mkdir -p Resources/WebDriverAgent.bundle
+3. sh ./Scripts/bootstrap.sh -d
+4. Open WebDriverAgent.xcodeproj
+5. Build WebDriverAgent with signed
+6. chmod -R 777 . appium-xcuitest-driver/*
 
