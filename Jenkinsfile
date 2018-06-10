@@ -2,22 +2,13 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      parallel {
-        stage('Build') {
-          steps {
-            build 'base-test-framework'
-          }
-        }
-        stage('Unit Test') {
-          steps {
-            sh 'mvn test'
-          }
-        }
+      steps {
+        build 'base-test-framework'
       }
     }
     stage('Test') {
       steps {
-        sh 'mvn verify'
+        build 'easyweather-test'
       }
     }
     stage('Staging') {
